@@ -4,12 +4,12 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js"
+    "start": "mongodb-runner start && node index.js"
   },
   "dependencies": {
     "express": "^4.17.1",
     "parse": "^2.19.0",
-    "parse-dashboard": "^3.3.0",
+    "parse-dashboard": "^4.0.0",
     "parse-server": "^4.10.4",
     "parse-server-jobs-scheduler": "^1.1.1"
   }
