@@ -12,7 +12,7 @@ This is a starter template for testing new building tools for Parse Server which
 - `npm install -g mongodb-runner` using git-cli with administrator to run on Windows  
 
 ## Development
-- `mongodb-runner start` will install at frist time lauching and start up mongodb      **reqiure `vcredist_x64` installed
+- ~~`mongodb-runner start` will install at frist time lauching and start up mongodb  ~~    **reqiure `vcredist_x64` installed
 - `npm i`
 - `npm start`
 
