@@ -21,6 +21,12 @@ const ParseDashboardEndpoint = '/dashboard';
 
 const APP_PARSE_SERVER_URL = APP_SERVER_URL + ParseServerEndpoint;
 
+
+// var FSFilesAdapter = require('@parse/fs-files-adapter');
+// var fsAdapter = new FSFilesAdapter({
+//   "filesSubDirectory": "my/files/folder" // optional, defaults to ./files
+// });
+
 var parse = new ParseServer({
   databaseURI: APP_DATABASE_URI || 'mongodb://127.0.0.1:27017/parse',
   cloud: APP_CLOUD_CODE || __dirname + '/cloud/main.js',
@@ -29,6 +35,7 @@ var parse = new ParseServer({
   appName: APP_NAME || 'test1',
   serverURL: 'http://localhost:6969/parse',  // Don't forget to change to https if needed, https doesn't work on ssl remote server. I don't remember where I have read it
   // publicServerURL: APP_PARSE_SERVER_URL || 'http://localhost:6969/parse',
+  // filesAdapter: fsAdapter
 });
 
 // TODO: change this and understand why i did it
@@ -55,7 +62,8 @@ var dashboard = new ParseDashboard({
 var app = express();
 
 // Serve static assets from the /public folder
-app.use('/public', express.static(path.join(__dirname, '/public')));
+// app.use('/public', express.static(path.join(__dirname, '/public')));
+app.use('/', express.static(path.join(__dirname, '/dist')));
 
 // Serve the Parse API on the /parse URL prefix
 app.use(ParseServerEndpoint, parse);
