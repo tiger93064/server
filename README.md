@@ -23,6 +23,7 @@ This is a starter template for testing new building tools for Parse Server which
 ## Usage
 - parse-server api is available via `localhost:6969/parse` by default
 - dashboard of parse-server via `localhost:6969/dashboard` by default with admin/12345 as P/W
+- static files(like Vue dist files) from folder `/dist` is available as root page via `localhost:6969/` by default 
 
   see .env/config.env.js for customize configuration
 
