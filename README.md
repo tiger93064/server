@@ -8,13 +8,17 @@ This is a starter template for testing new building tools for Parse Server which
 [Express](https://expressjs.com) is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
 
 
-## Pre-Installation 
+## Pre-Installation
+### for Development
 - `npm install -g mongodb-runner` using git-cli with administrator to run on Windows  
+### for Production
+- install `MongoDB Server` [guide](https://docs.mongodb.com/v5.0/tutorial/install-mongodb-on-os-x/)
 
 ## Development
 - ~~`mongodb-runner start` will install at frist time lauching and start up mongodb  ~~    **reqiure `vcredist_x64` installed
 - `npm i`
 - `npm start`
+
 
 ## Usage
 - parse-server api is available via `localhost:6969/parse` by default
