@@ -15,7 +15,7 @@ This is a starter template for testing new building tools for Parse Server which
 - install `MongoDB Server` [guide](https://docs.mongodb.com/v5.0/tutorial/install-mongodb-on-os-x/)
 
 ## Development
-- ~~`mongodb-runner start` will install at frist time lauching and start up mongodb  ~~    **reqiure `vcredist_x64` installed
+- (Development only)`mongodb-runner start` will install at frist time lauching and start up mongodb     **reqiure `vcredist_x64` installed
 - `npm i`
 - `npm start`
 
