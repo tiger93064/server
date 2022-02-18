@@ -36,6 +36,20 @@ var parse = new ParseServer({
   serverURL: 'http://localhost:6969/parse',  // Don't forget to change to https if needed, https doesn't work on ssl remote server. I don't remember where I have read it
   // publicServerURL: APP_PARSE_SERVER_URL || 'http://localhost:6969/parse',
   // filesAdapter: fsAdapter
+
+
+  
+  // push: {
+  //   android: {
+  //     apiKey: '...'
+  //   },
+  //   ios: {
+  //     pfx: './cert/java_use_dev.p12',
+  //     passphrase: 'hyweb', // optional password to your p12/PFX
+  //     bundleId: 'com.hyweb.formosa.memberapp',
+  //     production: true
+  //   }
+  // }
 });
 
 // TODO: change this and understand why i did it
