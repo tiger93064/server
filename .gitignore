@@ -4,3 +4,5 @@ logs
 dist
 dist-ssr
 *.local
+*.p12
+package-lock.json
